@@ -41,7 +41,6 @@ Question 2: Attention Mechanisms
 Hard Attention: Selects a single input position stochastically (using sampling or max picking). Because this decision is non-differentiable, hard attention cannot be trained using standard gradient descent and requires reinforcement learning methods like REINFORCE.
 Soft Attention: Computes a continuous, weighted probability distribution over all input positions using the Softmax function. Because every operation is smooth and continuous, soft attention is fully differentiable end-to-end, enabling efficient optimization via standard backpropagation.
 
-
 (b) Calculation of Raw Attention Scores:
 Given decoder state $\mathbf{s} = [1, 0]^\top$ and encoder states $\mathbf{h}_1 = [1, 0]^\top$, $\mathbf{h}_2 = [0, 1]^\top$, $\mathbf{h}_3 = [1, 1]^\top$:
 
